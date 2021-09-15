@@ -10,8 +10,8 @@ app.config["SQLALCHEMY_ECHO"] = True
 app.config["SECRET_KEY"] = "harrison"
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
-# connect_db(app)
-# db.create_all()
+connect_db(app)
+db.create_all()
 
 toolbar = DebugToolbarExtension(app)
 
