@@ -163,7 +163,7 @@ def edit_feedback(feedback_id):
     else:
 
         feedback = Feedback.query.get(feedback_id)
-        form = FeedbackForm()
+        form = FeedbackForm(obj=feedback)
         if form.validate_on_submit():
             # this does not pre popullate my edit form. though i am using the same form 
             # to add and update
