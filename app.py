@@ -4,7 +4,7 @@ from models import Feedback, connect_db, db, User
 from forms import RegisterForm, LoginForm, FeedbackForm
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://:5433/flask-feedback"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://bimgxxgngqzrkc:c495d199b50ad89509ca0130359d6cc8da88e3b41b5968796696ecab4b0e0327@ec2-54-146-84-101.compute-1.amazonaws.com:5432/da68np7ml6lhso"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_ECHO"] = True
 app.config["SECRET_KEY"] = "harrison"
